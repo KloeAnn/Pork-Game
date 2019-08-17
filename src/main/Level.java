@@ -9,6 +9,7 @@ public class Level {
     private int cardsLevel;
     private List<Integer> repeatNumber;
     private int tribleNumber;
+    private int straightNumber;
 
     public Level(String c) {
         if(c.length()==2){
@@ -96,9 +97,22 @@ public class Level {
                 }
                 break;
             default:
-                setCardsLevel(1);
+                if(isStraight(list1)){
+                    setCardsLevel(5);
+                    setStraightNumber(list1.get(0));
+                }else {
+                    setCardsLevel(1);
+                }
         }
         System.out.println(repeatNumber);
+    }
+
+    public boolean isStraight(List<Integer>list){
+        Collections.sort(list);
+        if(list.get(4)-list.get(0)==4)
+            return true;
+        else
+            return false;
     }
 
     public int getTribleNumber() {
@@ -107,5 +121,13 @@ public class Level {
 
     public void setTribleNumber(int tribleNumber) {
         this.tribleNumber = tribleNumber;
+    }
+
+    public int getStraightNumber() {
+        return straightNumber;
+    }
+
+    public void setStraightNumber(int straightNumber) {
+        this.straightNumber = straightNumber;
     }
 }

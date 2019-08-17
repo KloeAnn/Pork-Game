@@ -31,11 +31,10 @@ public class PorkGame {
         Level level2 = getPlayers().get(1).getLevels();
 
         if(level1.getCardsLevel()!=level2.getCardsLevel()) {
-//            System.out.println("hahaha");
-            return compareResult(level1.getCardsLevel(),level2.getCardsLevel());
-        }else {
             System.out.println(level1.getCardsLevel());
             System.out.println(level2.getCardsLevel());
+            return compareResult(level1.getCardsLevel(),level2.getCardsLevel());
+        }else {
             return compareResult(level1.getMaxCard(),level2.getMaxCard());
         }
     }
