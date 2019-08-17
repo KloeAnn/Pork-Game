@@ -26,7 +26,7 @@ public class Level {
 
             this.cards = Arrays.asList(card1, card2,card3,card4,card5);
             Collections.sort(this.cards);
-            calculateCardsLevel(getCards());
+            calculateCardsLevel();
         }
     }
 
@@ -67,53 +67,66 @@ public class Level {
         }
     }
 
-    public void calculateCardsLevel(List<Card> cards){
-        List<Integer>list1=new ArrayList<>();
-        List<Integer>list2=new ArrayList<>();
-        repeatNumber=new ArrayList<>();
-        getCards().stream().forEach(
-                p -> {
-                    if (!list1.contains(p.getCardNumber())) {
-                        list1.add(p.getCardNumber());
-                    }else {
-                        if (!list2.contains(p.getCardNumber())) {
-                            list2.add(p.getCardNumber());
+    public void calculateCardsLevel(){
+        if(isFlush()){
+            setCardsLevel(6);
+        }else {
+            List<Integer> list1 = new ArrayList<>();
+            List<Integer> list2 = new ArrayList<>();
+            repeatNumber = new ArrayList<>();
+            getCards().stream().forEach(
+                    p -> {
+                        if (!list1.contains(p.getCardNumber())) {
+                            list1.add(p.getCardNumber());
+                        } else {
+                            if (!list2.contains(p.getCardNumber())) {
+                                list2.add(p.getCardNumber());
+                            }
                         }
                     }
-                }
-        );
+            );
 //        Collections.sort(repeatNumber);
-        //System.out.println(repeatNumber);
-        switch (list1.size()){
-            case 4:
-                setCardsLevel(2);
-                repeatNumber.add(list2.get(0));
-                break;
-            case 3:
-                if(list2.size()==2){
-                    repeatNumber=list2;
-                    Collections.sort(repeatNumber);
-                    setCardsLevel(3);
-                }
-                else {
-                    setTribleNumber(list2.get(0));
-                    setCardsLevel(4);
-                }
-                break;
-            default:
-                if(isStraight(list1)){
-                    setCardsLevel(5);
-                    setStraightNumber(list1.get(0));
-                }else {
-                    setCardsLevel(1);
-                }
+            //System.out.println(repeatNumber);
+            switch (list1.size()) {
+                case 4:
+                    setCardsLevel(2);
+                    repeatNumber.add(list2.get(0));
+                    break;
+                case 3:
+                    if (list2.size() == 2) {
+                        repeatNumber = list2;
+                        Collections.sort(repeatNumber);
+                        setCardsLevel(3);
+                    } else {
+                        setTribleNumber(list2.get(0));
+                        setCardsLevel(4);
+                    }
+                    break;
+                default:
+                    if (isStraight(list1)) {
+                        setCardsLevel(5);
+                        setStraightNumber(list1.get(0));
+                    } else {
+                        setCardsLevel(1);
+                    }
+            }
+            System.out.println(repeatNumber);
         }
-        System.out.println(repeatNumber);
     }
 
     public boolean isStraight(List<Integer>list){
         Collections.sort(list);
         if(list.get(4)-list.get(0)==4)
+            return true;
+        else
+            return false;
+    }
+    public boolean isFlush(){
+        Set set=new HashSet();
+        getCards().stream().forEach(
+                p->set.add(p.getCardColor())
+        );
+        if(set.size()==1)
             return true;
         else
             return false;
