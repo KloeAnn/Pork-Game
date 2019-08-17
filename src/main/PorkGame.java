@@ -35,6 +35,8 @@ public class PorkGame {
             System.out.println(level2.getCardsLevel());
             return compareResult(level1.getCardsLevel(),level2.getCardsLevel());
         }else {
+            System.out.println(level1.getMaxCard());
+            System.out.println(level2.getMaxCard());
             return compareResult(level1.getMaxCard(),level2.getMaxCard());
         }
     }

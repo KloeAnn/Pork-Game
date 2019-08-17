@@ -12,6 +12,7 @@ public class Level {
     private int straightNumber;
     private int flushNumber;
     private int fullHouseNumber;
+    private int straightFlushNumber;
 
     public Level(String c) {
         if(c.length()==2){
@@ -70,16 +71,14 @@ public class Level {
                 return getTribleNumber();
             case 8:
                 return getFullHouseNumber();
+            case 9:
+                return getStraightFlushNumber();
             default:
                 return 0;
         }
     }
 
     public void calculateCardsLevel(){
-        if(isFlush()){
-            setCardsLevel(6);
-            setFlushNumber(getCards().get(getCards().size()-1).getCardNumber());
-        }else {
             List<Integer> list1 = new ArrayList<>();
             List<Integer> list2 = new ArrayList<>();
             repeatNumber = new ArrayList<>();
@@ -132,14 +131,24 @@ public class Level {
                     break;
                 default:
                     if (isStraight(list1)) {
-                        setCardsLevel(5);
-                        setStraightNumber(list1.get(0));
+                        if(isFlush()){
+                            setCardsLevel(9);
+                            setStraightFlushNumber(list1.get(0));
+                        }else {
+                            setCardsLevel(5);
+                            setStraightNumber(list1.get(0));
+                        }
                     } else {
-                        setCardsLevel(1);
+                        if(isFlush()){
+                            setCardsLevel(6);
+                            setFlushNumber(list1.get(0));
+                        }else {
+                            setCardsLevel(1);
+                        }
                     }
             }
-            System.out.println(repeatNumber);
-        }
+//            System.out.println(getCardsLevel());
+
     }
 
     public boolean isStraight(List<Integer>list){
@@ -190,5 +199,13 @@ public class Level {
 
     public void setFullHouseNumber(int fullHouseNumber) {
         this.fullHouseNumber = fullHouseNumber;
+    }
+
+    public int getStraightFlushNumber() {
+        return straightFlushNumber;
+    }
+
+    public void setStraightFlushNumber(int straightFlushNumber) {
+        this.straightFlushNumber = straightFlushNumber;
     }
 }
