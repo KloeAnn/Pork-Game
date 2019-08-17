@@ -23,14 +23,28 @@ public class PorkGame {
     }
 
     public String playPorkGame() {
+        return comparePlayersLevels();
+    }
+
+    public String comparePlayersLevels(){
         Level level1 = getPlayers().get(0).getLevels();
         Level level2 = getPlayers().get(1).getLevels();
-        System.out.println(level1.getCardsLevel());
-        System.out.println(level2.getCardsLevel());
-        if (level1.getCardsLevel() > level2.getCardsLevel()) {
+
+        if(level1.getCardsLevel()!=level2.getCardsLevel()) {
+            System.out.println("hahaha");
+            return compareResult(level1.getCardsLevel(),level2.getCardsLevel());
+        }else {
+            System.out.println(level1.getMaxCard());
+            System.out.println(level2.getMaxCard());
+            return compareResult(level1.getMaxCard(),level2.getMaxCard());
+        }
+    }
+
+    public String compareResult(int number1,int number2){
+        if (number1 > number2) {
             return "player1 wins";
         } else {
-            if (level1.getCardsLevel() > level2.getCardsLevel()) {
+            if (number1 < number2) {
                 return "player2 wins";
             } else {
                 return "This game is a draw";

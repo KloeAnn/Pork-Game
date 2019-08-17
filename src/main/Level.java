@@ -48,8 +48,15 @@ public class Level {
         this.repeatNumber = repeatNumber;
     }
 
-    public Card getMaxCard(){
-        return getCards().get(getCards().size()-1);
+    public int getMaxCard(){
+        switch (getCardsLevel()){
+            case 1:
+                return getCards().get(getCards().size()-1).getCardNumber();
+            case 2:
+                return getRepeatNumber().get(0);
+            default:
+                return 0;
+        }
     }
 
     public void calculateCardsLevel(List<Card> cards){
