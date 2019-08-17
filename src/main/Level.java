@@ -94,7 +94,7 @@ public class Level {
                     }
             );
 //        Collections.sort(repeatNumber);
-            //System.out.println(repeatNumber);
+//            System.out.println(list1.size());
             switch (list1.size()) {
                 case 4:
                     setCardsLevel(2);
@@ -107,6 +107,7 @@ public class Level {
                         setCardsLevel(3);
                     } else {
                         setTribleNumber(list2.get(0));
+//                        System.out.println("bugs");
                         setCardsLevel(4);
                     }
                     break;
@@ -141,7 +142,7 @@ public class Level {
                     } else {
                         if(isFlush()){
                             setCardsLevel(6);
-                            setFlushNumber(list1.get(0));
+                            setFlushNumber(list1.get(list1.size()-1));
                         }else {
                             setCardsLevel(1);
                         }

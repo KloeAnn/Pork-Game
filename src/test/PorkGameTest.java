@@ -161,4 +161,37 @@ public class PorkGameTest {
         assertEquals("player1 wins",gameResult);
     }
 
+    @Test
+    public void testPlayPorkGame_given4D_5D_6D_7D_8D_9H_TH_JH_QH_KH_thenReturnPlayer1Wins() {
+        String cards="4D_5D_6D_7D_8D_9H_TH_JH_QH_KH";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("player2 wins",gameResult);
+    }
+
+    @Test
+    public void testPlayPorkGame_given4D_5D_6D_7D_8D_4H_5H_8H_6H_7H_thenReturnPlayer1Wins() {
+        String cards="4D_5D_6D_7D_8D_4H_5H_8H_6H_7H";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("This game is a draw",gameResult);
+    }
+
+    @Test
+    public void testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins() {
+        String cards="4D_TD_6D_7D_8D_4H_5H_KH_6H_7H";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("player2 wins",gameResult);
+    }
+
 }
