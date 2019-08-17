@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e0c742-0d72-4ad6-84c0-8a65e1450a16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PorkGame1/main/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PorkGame1/main/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PorkGame1/main/PorkGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PorkGame1/main/PorkGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PorkGame1/test/PorkGameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PorkGame1/test/PorkGameTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/PorkGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/PorkGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/PorkGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PorkGameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,11 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/PorkGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+            <state relative-caret-position="409">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
                 <element signature="e#679#680#0" expanded="true" />
                 <element signature="e#716#717#0" expanded="true" />
               </folding>
@@ -65,20 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/PorkGameTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
+              <caret line="198" column="42" selection-start-line="198" selection-start-column="42" selection-end-line="198" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="143" column="55" selection-start-line="143" selection-start-column="55" selection-end-line="143" selection-end-column="55" />
+            <state relative-caret-position="190">
+              <caret line="80" column="52" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="80" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#896#897#0" expanded="true" />
@@ -93,14 +90,14 @@
                 <element signature="e#1194#1195#0" expanded="true" />
                 <element signature="e#3493#3557#1" />
                 <element signature="e#3985#4053#1" />
-                <element signature="e#5717#5718#0" expanded="true" />
-                <element signature="e#5818#5819#0" expanded="true" />
-                <element signature="e#5893#5894#0" expanded="true" />
-                <element signature="e#6002#6003#0" expanded="true" />
-                <element signature="e#6071#6072#0" expanded="true" />
-                <element signature="e#6168#6169#0" expanded="true" />
-                <element signature="e#6245#6246#0" expanded="true" />
-                <element signature="e#6358#6359#0" expanded="true" />
+                <element signature="e#5605#5606#0" expanded="true" />
+                <element signature="e#5706#5707#0" expanded="true" />
+                <element signature="e#5781#5782#0" expanded="true" />
+                <element signature="e#5890#5891#0" expanded="true" />
+                <element signature="e#5969#5970#0" expanded="true" />
+                <element signature="e#6076#6077#0" expanded="true" />
+                <element signature="e#6153#6154#0" expanded="true" />
+                <element signature="e#6266#6267#0" expanded="true" />
                 <element signature="e#6227#6228#0" expanded="true" />
                 <element signature="e#6269#6270#0" expanded="true" />
                 <element signature="e#6336#6337#0" expanded="true" />
@@ -133,9 +130,9 @@
         <option value="$PROJECT_DIR$/src/Pork.java" />
         <option value="$PROJECT_DIR$/src/main/Player.java" />
         <option value="$PROJECT_DIR$/src/main/Card.java" />
-        <option value="$PROJECT_DIR$/src/main/PorkGame.java" />
         <option value="$PROJECT_DIR$/src/test/PorkGameTest.java" />
         <option value="$PROJECT_DIR$/src/main/Level.java" />
+        <option value="$PROJECT_DIR$/src/main/PorkGame.java" />
       </list>
     </option>
   </component>
@@ -265,7 +262,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_AD_2H_3H_4H_9H_KH_thenReturnPlayer1Wins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PorkGameTest.testPlayPorkGame_given4D_KD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PorkGame1" />
       <extension name="coverage">
         <pattern>
@@ -275,7 +272,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.PorkGameTest" />
-      <option name="METHOD_NAME" value="testPlayPorkGame_given4D_5D_6D_7D_AD_2H_3H_4H_9H_KH_thenReturnPlayer1Wins" />
+      <option name="METHOD_NAME" value="testPlayPorkGame_given4D_KD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -300,10 +297,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PorkGameTest" />
+        <item itemvalue="JUnit.PorkGameTest.testPlayPorkGame_given4D_KD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" />
         <item itemvalue="JUnit.PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" />
         <item itemvalue="JUnit.PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_8D_4H_5H_8H_6H_7H_thenReturnPlayer1Wins" />
         <item itemvalue="JUnit.PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_8D_9H_TH_JH_QH_KH_thenReturnPlayer1Wins" />
-        <item itemvalue="JUnit.PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_AD_2H_3H_4H_9H_KH_thenReturnPlayer1Wins" />
       </list>
     </recent_temporary>
   </component>
@@ -321,24 +318,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_5D_6D_7D_8D_9H_TH_JH_QH_KH_thenReturnPlayer1Wins - 2019.08.17 at 16h 18m 11s.xml">
-      <configuration name="PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_8D_9H_TH_JH_QH_KH_thenReturnPlayer1Wins" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 16h 18m 53s.xml">
-      <configuration name="PorkGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_5D_6D_7D_8D_4H_5H_8H_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 22m 53s.xml">
-      <configuration name="PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_8D_4H_5H_8H_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_5D_6D_7D_8D_4H_5H_8H_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 23m 12s.xml">
-      <configuration name="PorkGameTest.testPlayPorkGame_given4D_5D_6D_7D_8D_4H_5H_8H_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 16h 23m 16s.xml">
-      <configuration name="PorkGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 26m 09s.xml">
-      <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 27m 54s.xml">
       <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
     </history-entry>
@@ -350,6 +329,24 @@
     </history-entry>
     <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 30m 43s.xml">
       <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 32m 53s.xml">
+      <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 33m 33s.xml">
+      <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 34m 01s.xml">
+      <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 34m 22s.xml">
+      <configuration name="PorkGameTest.testPlayPorkGame_given4D_TD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PorkGameTest - 2019.08.17 at 16h 34m 53s.xml">
+      <configuration name="PorkGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PorkGameTest_testPlayPorkGame_given4D_KD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins - 2019.08.17 at 16h 38m 11s.xml">
+      <configuration name="PorkGameTest.testPlayPorkGame_given4D_KD_6D_7D_8D_4H_5H_KH_6H_7H_thenReturnPlayer1Wins" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -474,30 +471,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/PorkGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/PorkGameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="143" column="55" selection-start-line="143" selection-start-column="55" selection-end-line="143" selection-end-column="55" />
+        <state relative-caret-position="190">
+          <caret line="80" column="52" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="80" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#896#897#0" expanded="true" />
@@ -512,19 +489,39 @@
             <element signature="e#1194#1195#0" expanded="true" />
             <element signature="e#3493#3557#1" />
             <element signature="e#3985#4053#1" />
-            <element signature="e#5717#5718#0" expanded="true" />
-            <element signature="e#5818#5819#0" expanded="true" />
-            <element signature="e#5893#5894#0" expanded="true" />
-            <element signature="e#6002#6003#0" expanded="true" />
-            <element signature="e#6071#6072#0" expanded="true" />
-            <element signature="e#6168#6169#0" expanded="true" />
-            <element signature="e#6245#6246#0" expanded="true" />
-            <element signature="e#6358#6359#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
+            <element signature="e#5781#5782#0" expanded="true" />
+            <element signature="e#5890#5891#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+            <element signature="e#6076#6077#0" expanded="true" />
+            <element signature="e#6153#6154#0" expanded="true" />
+            <element signature="e#6266#6267#0" expanded="true" />
             <element signature="e#6227#6228#0" expanded="true" />
             <element signature="e#6269#6270#0" expanded="true" />
             <element signature="e#6336#6337#0" expanded="true" />
             <element signature="e#6398#6399#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/PorkGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PorkGameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="198" column="42" selection-start-line="198" selection-start-column="42" selection-end-line="198" selection-end-column="42" />
         </state>
       </provider>
     </entry>

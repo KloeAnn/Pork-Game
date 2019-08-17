@@ -10,7 +10,7 @@ public class Level {
     private List<Integer> repeatNumber;
     private int tribleNumber;
     private int straightNumber;
-    private int flushNumber;
+    private List<Integer> flushNumber;
     private int fullHouseNumber;
     private int straightFlushNumber;
 
@@ -65,8 +65,6 @@ public class Level {
                 return getTribleNumber();
             case 5:
                 return getStraightNumber();
-            case 6:
-                return getFlushNumber();
             case 7:
                 return getTribleNumber();
             case 8:
@@ -142,7 +140,7 @@ public class Level {
                     } else {
                         if(isFlush()){
                             setCardsLevel(6);
-                            setFlushNumber(list1.get(list1.size()-1));
+                            setFlushNumber(list1);
                         }else {
                             setCardsLevel(1);
                         }
@@ -186,11 +184,11 @@ public class Level {
         this.straightNumber = straightNumber;
     }
 
-    public int getFlushNumber() {
+    public List<Integer> getFlushNumber() {
         return flushNumber;
     }
 
-    public void setFlushNumber(int flushNumber) {
+    public void setFlushNumber(List<Integer> flushNumber) {
         this.flushNumber = flushNumber;
     }
 

@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,7 +35,19 @@ public class PorkGame {
             System.out.println(level1.getCardsLevel());
             System.out.println(level2.getCardsLevel());
             return compareResult(level1.getCardsLevel(),level2.getCardsLevel());
-        }else {
+        }else if(level1.getCardsLevel()==6){
+            System.out.println(level1.getCardsLevel());
+            System.out.println(level2.getCardsLevel());
+            List<Integer> list1 = level1.getFlushNumber();
+            List<Integer> list2 = level2.getFlushNumber();
+            for(int i=4;i>=0;i--){
+                String result=compareResult(list1.get(i),list2.get(i));
+                if(!result.equals("This game is a draw"))
+                    return result;
+            }
+            return "This game is a draw";
+        }
+        else {
             System.out.println(level1.getCardsLevel());
             System.out.println(level2.getCardsLevel());
             return compareResult(level1.getMaxCard(),level2.getMaxCard());
