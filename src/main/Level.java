@@ -60,15 +60,18 @@ public class Level {
     }
 
     public void calculateCardsLevel(List<Card> cards){
+        List<Integer>list=new ArrayList<>();
         repeatNumber=new ArrayList<>();
         getCards().stream().forEach(
                 p -> {
                     if (!repeatNumber.contains(p.getCardNumber())) {
+                        list.add(p.getCardNumber());
+                    }else {
                         repeatNumber.add(p.getCardNumber());
                     }
                 }
         );
-        if(repeatNumber.size()==getCards().size()){
+        if(repeatNumber.size()==0){
             setCardsLevel(1);
         }else {
             setCardsLevel(2);
