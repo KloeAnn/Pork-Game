@@ -54,6 +54,8 @@ public class Level {
                 return getCards().get(getCards().size()-1).getCardNumber();
             case 2:
                 return getRepeatNumber().get(0);
+            case 3:
+                return getRepeatNumber().get(getRepeatNumber().size()-1);
             default:
                 return 0;
         }
@@ -64,17 +66,25 @@ public class Level {
         repeatNumber=new ArrayList<>();
         getCards().stream().forEach(
                 p -> {
-                    if (!repeatNumber.contains(p.getCardNumber())) {
+                    if (!list.contains(p.getCardNumber())) {
                         list.add(p.getCardNumber());
                     }else {
                         repeatNumber.add(p.getCardNumber());
                     }
                 }
         );
-        if(repeatNumber.size()==0){
-            setCardsLevel(1);
-        }else {
-            setCardsLevel(2);
+        Collections.sort(repeatNumber);
+        //System.out.println(repeatNumber);
+        switch (repeatNumber.size()){
+            case 1:
+                setCardsLevel(2);
+                break;
+            case 2:
+                setCardsLevel(3);
+                break;
+            default:
+                setCardsLevel(1);
         }
+        System.out.println(repeatNumber);
     }
 }
