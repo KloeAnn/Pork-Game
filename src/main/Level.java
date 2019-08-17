@@ -8,7 +8,7 @@ public class Level {
     private List<Card>cards;
     private int cardsLevel;
     private List<Integer> repeatNumber;
-    private int noRepeatNumber;
+    private List<Integer> noRepeatNumber;
     private int tribleNumber;
     private int straightNumber;
     private List<Integer> flushNumber;
@@ -58,8 +58,6 @@ public class Level {
         switch (getCardsLevel()){
             case 1:
                 return getCards().get(getCards().size()-1).getCardNumber();
-            case 2:
-                return getRepeatNumber().get(0);
             case 4:
                 return getTribleNumber();
             case 5:
@@ -90,12 +88,15 @@ public class Level {
                         }
                     }
             );
+        Collections.sort(list1);
+        Collections.sort(list2);
 //        Collections.sort(repeatNumber);
 //            System.out.println(list1.size());
             switch (list1.size()) {
                 case 4:
                     setCardsLevel(2);
                     repeatNumber.add(list2.get(0));
+                    setNoRepeatNumber(list1,list2);
                     break;
                 case 3:
                     if (list2.size() == 2) {
@@ -208,16 +209,22 @@ public class Level {
         this.straightFlushNumber = straightFlushNumber;
     }
 
-    public int getNoRepeatNumber() {
+    public List<Integer> getNoRepeatNumber() {
         return noRepeatNumber;
     }
 
     public void setNoRepeatNumber(List<Integer>list1,List<Integer>list2) {
 
-        this.noRepeatNumber =list1.stream().filter(
-                p->p!=list2.get(0)&&p!=list2.get(1)
-        ).collect(Collectors.toList()).get(0);
-
+        if(list2.size()==2) {
+            this.noRepeatNumber=new ArrayList<>();
+            this.noRepeatNumber.add(list1.stream().filter(
+                    p -> p != list2.get(0) && p != list2.get(1)
+            ).collect(Collectors.toList()).get(0));
+        }else {
+            this.noRepeatNumber=list1.stream().filter(
+                    p -> p != list2.get(0)
+            ).collect(Collectors.toList());
+        }
 //        System.out.println(this.getNoRepeatNumber());
 
     }
