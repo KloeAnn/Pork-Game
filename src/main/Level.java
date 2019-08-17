@@ -58,6 +58,10 @@ public class Level {
                 return getRepeatNumber().get(0);
             case 3:
                 return getRepeatNumber().get(getRepeatNumber().size()-1);
+            case 4:
+                return getTribleNumber();
+            case 5:
+                return getStraightNumber();
             default:
                 return 0;
         }
