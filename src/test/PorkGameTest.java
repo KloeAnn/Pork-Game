@@ -128,4 +128,26 @@ public class PorkGameTest {
         assertEquals("player1 wins",gameResult);
     }
 
+    @Test
+    public void testPlayPorkGame_given4D_4S_6D_4H_6S_2H_2S_2D_9H_9C_thenReturnPlayer1Wins() {
+        String cards="4D_4S_6D_4H_6S_2H_2S_2D_9H_9C";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("player1 wins",gameResult);
+    }
+
+    @Test
+    public void testPlayPorkGame_given4D_4S_6D_4H_6S_2H_2S_2D_2C_9C_thenReturnPlayer1Wins() {
+        String cards="4D_4S_6D_4H_6S_2H_2S_2D_2C_9C";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("player2 wins",gameResult);
+    }
+
 }

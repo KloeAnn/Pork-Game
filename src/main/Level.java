@@ -11,6 +11,7 @@ public class Level {
     private int tribleNumber;
     private int straightNumber;
     private int flushNumber;
+    private int fullHouseNumber;
 
     public Level(String c) {
         if(c.length()==2){
@@ -65,6 +66,10 @@ public class Level {
                 return getStraightNumber();
             case 6:
                 return getFlushNumber();
+            case 7:
+                return getTribleNumber();
+            case 8:
+                return getFullHouseNumber();
             default:
                 return 0;
         }
@@ -104,6 +109,25 @@ public class Level {
                     } else {
                         setTribleNumber(list2.get(0));
                         setCardsLevel(4);
+                    }
+                    break;
+                case 2:
+                    if(list2.size()==1){
+                        setCardsLevel(8);
+                        setFullHouseNumber(list2.get(0));
+                    }else {
+                        setCardsLevel(7);
+                        int size=getCards().stream().filter(
+                                p->p.getCardNumber()==list2.get(0)
+                        ).collect(Collectors.toList()).size();
+
+                        if(size==2){
+                            repeatNumber=Arrays.asList(list2.get(0));
+                            setTribleNumber(list2.get(1));
+                        }else {
+                            repeatNumber=Arrays.asList(list2.get(1));
+                            setTribleNumber(list2.get(0));
+                        }
                     }
                     break;
                 default:
@@ -158,5 +182,13 @@ public class Level {
 
     public void setFlushNumber(int flushNumber) {
         this.flushNumber = flushNumber;
+    }
+
+    public int getFullHouseNumber() {
+        return fullHouseNumber;
+    }
+
+    public void setFullHouseNumber(int fullHouseNumber) {
+        this.fullHouseNumber = fullHouseNumber;
     }
 }
