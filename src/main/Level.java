@@ -8,6 +8,7 @@ public class Level {
     private List<Card>cards;
     private int cardsLevel;
     private List<Integer> repeatNumber;
+    private int noRepeatNumber;
     private int tribleNumber;
     private int straightNumber;
     private List<Integer> flushNumber;
@@ -59,8 +60,6 @@ public class Level {
                 return getCards().get(getCards().size()-1).getCardNumber();
             case 2:
                 return getRepeatNumber().get(0);
-            case 3:
-                return getRepeatNumber().get(getRepeatNumber().size()-1);
             case 4:
                 return getTribleNumber();
             case 5:
@@ -102,6 +101,7 @@ public class Level {
                     if (list2.size() == 2) {
                         repeatNumber = list2;
                         Collections.sort(repeatNumber);
+                        setNoRepeatNumber(list1,list2);
                         setCardsLevel(3);
                     } else {
                         setTribleNumber(list2.get(0));
@@ -206,5 +206,19 @@ public class Level {
 
     public void setStraightFlushNumber(int straightFlushNumber) {
         this.straightFlushNumber = straightFlushNumber;
+    }
+
+    public int getNoRepeatNumber() {
+        return noRepeatNumber;
+    }
+
+    public void setNoRepeatNumber(List<Integer>list1,List<Integer>list2) {
+
+        this.noRepeatNumber =list1.stream().filter(
+                p->p!=list2.get(0)&&p!=list2.get(1)
+        ).collect(Collectors.toList()).get(0);
+
+//        System.out.println(this.getNoRepeatNumber());
+
     }
 }
