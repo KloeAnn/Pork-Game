@@ -4,23 +4,27 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PorkGame {
-    private List<Card> cards;
+    private List<Player> players;
 
     public PorkGame(String c) {
-        Card card1 = new Card(c.split("_")[0]);
-        Card card2 = new Card(c.split("_")[1]);
-
-        this.cards = Arrays.asList(card1, card2);
+        if (c.length() == 5) {
+            Player player1 = new Player(c.substring(0, 2));
+            Player player2 = new Player(c.substring(3));
+            this.players = Arrays.asList(player1, player2);
+        } else {
+            Player player1 = new Player(c.substring(0, 14));
+            Player player2 = new Player(c.substring(15));
+            this.players = Arrays.asList(player1, player2);
+        }
     }
 
-    public List<Card> getCards() {
-        return cards;
+    public List<Player> getPlayers() {
+        return players;
     }
 
     public String playPorkGame() {
-        List<Card> cards = getCards();
-        Card card1 = cards.get(0);
-        Card card2 = cards.get(1);
+        Card card1 = getPlayers().get(0).getMaxCard();
+        Card card2 = getPlayers().get(1).getMaxCard();
         if (card1.getCardNumber() > card2.getCardNumber()) {
             return "player1 wins";
         } else {

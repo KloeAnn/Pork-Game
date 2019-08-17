@@ -3,13 +3,14 @@ package main;
 import java.util.Arrays;
 import java.util.List;
 
-public class Card {
+public class Card implements Comparable<Card>{
     private int cardNumber;
     private String cardColor;
 
     public Card(String card) {
         String cardNumber=card.split("")[0];
         String cardColor=card.split("")[1];
+        System.out.println(card);
         this.cardNumber = transformCardNumber(cardNumber);
         this.cardColor = cardColor;
     }
@@ -42,5 +43,12 @@ public class Card {
         }
     }
 
-
+    @Override
+    public int compareTo(Card card ){
+        if(this.getCardNumber() >= card.getCardNumber()){
+            return 1;
+           }else {
+            return -1;
+        }
+    }
 }
