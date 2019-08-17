@@ -1,0 +1,28 @@
+C D H S
+1: 2C_AD   player2 wins
+2: 2C_4D_5H_6C_AD_2D_3D_5S_8C_QD   player1 wins
+3: 4C_4D_5H_6C_AD_2D_3D_5S_8C_QD   player1 wins
+4: 4C_4D_5H_6C_AD_2D_3D_5S_5C_QD   player2 wins
+5: 4C_4D_5H_5C_AD_2D_3D_5S_5D_QD   player1 wins
+6: 4C_4D_8H_8C_AD_2D_3D_3S_QH_QD   player2 wins
+7: 4C_4D_4H_8C_TD_2D_3D_3S_QH_QD   player1 wins
+8: 4C_4D_4H_8C_TD_2D_3D_4S_5H_6D   player2 wins
+9: 4C_5D_6H_7C_8D_2D_3D_4S_5H_6D   player1 wins
+10: 4C_5H_6H_7C_8D_2H_3H_4H_9H_KH   player2 wins
+11: 4D_5D_6D_7D_AD_2H_3H_4H_9H_KH   player1 wins
+12: 4D_4S_6D_4H_6S_2H_2S_2D_9H_9C   player1 wins
+13: 4D_4S_6D_4H_6S_2H_2S_2D_2C_9C   player2 wins
+14: 4D_5D_6D_7D_8D_9H_9S_9D_2C_9C   player1 wins
+15: 4D_5D_6D_7D_8D_9H_TH_JH_QH_KH   player2 wins
+16: 4D_5D_6D_7D_8D_4H_5H_8H_6H_7H   This game is a draw
+17: 4D_TD_6D_7D_8D_4H_5H_KH_6H_7H   player2 wins
+18: 4D_KD_6D_7D_8D_4H_5H_KH_6H_7H   player1 wins
+19: 4D_KD_6D_7D_8D_4H_8H_KH_6H_7H   This game is a draw
+20: 4D_5S_6D_7S_8D_4H_5D_6H_7D_8H   This game is a draw
+21: 4D_4S_6D_7S_8D_5H_5D_6H_7D_8H   player2 wins
+22: 3D_3S_6D_6S_TD_3H_3C_6H_6C_9H   player1 wins
+23: 3D_3S_6D_7S_TD_3H_3C_5H_6C_AH   player2 wins
+24: 3D_3S_6D_7S_AD_3H_3C_5H_6C_AH   player1 wins
+25: 3D_3S_6D_5S_AD_3H_3C_5H_6C_AH   This game is a draw
+26: 3D_4S_6D_8S_AD_3H_5C_AH_7C_8H   player2 wins
+27: 3D_4S_6D_8S_AD_3H_6C_AH_4C_8H   This game is a draw
