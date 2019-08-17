@@ -117,4 +117,15 @@ public class PorkGameTest {
         assertEquals("player2 wins",gameResult);
     }
 
+    @Test
+    public void testPlayPorkGame_given4D_5D_6D_7D_AD_2H_3H_4H_9H_KH_thenReturnPlayer1Wins() {
+        String cards="4D_5D_6D_7D_AD_2H_3H_4H_9H_KH";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("player1 wins",gameResult);
+    }
+
 }

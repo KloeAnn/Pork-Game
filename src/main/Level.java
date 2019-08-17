@@ -10,6 +10,7 @@ public class Level {
     private List<Integer> repeatNumber;
     private int tribleNumber;
     private int straightNumber;
+    private int flushNumber;
 
     public Level(String c) {
         if(c.length()==2){
@@ -62,6 +63,8 @@ public class Level {
                 return getTribleNumber();
             case 5:
                 return getStraightNumber();
+            case 6:
+                return getFlushNumber();
             default:
                 return 0;
         }
@@ -70,6 +73,7 @@ public class Level {
     public void calculateCardsLevel(){
         if(isFlush()){
             setCardsLevel(6);
+            setFlushNumber(getCards().get(getCards().size()-1).getCardNumber());
         }else {
             List<Integer> list1 = new ArrayList<>();
             List<Integer> list2 = new ArrayList<>();
@@ -146,5 +150,13 @@ public class Level {
 
     public void setStraightNumber(int straightNumber) {
         this.straightNumber = straightNumber;
+    }
+
+    public int getFlushNumber() {
+        return flushNumber;
+    }
+
+    public void setFlushNumber(int flushNumber) {
+        this.flushNumber = flushNumber;
     }
 }
