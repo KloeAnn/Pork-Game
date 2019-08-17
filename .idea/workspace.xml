@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e0c742-0d72-4ad6-84c0-8a65e1450a16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PorkGame1/main/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PorkGame1/main/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PorkGame1/main/PorkGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PorkGame1/main/PorkGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PorkGame1/test/PorkGameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PorkGame1/test/PorkGameTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/PorkGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/PorkGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Level.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/PorkGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-806">
-              <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+            <state relative-caret-position="190">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
@@ -73,39 +69,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="236" column="47" selection-start-line="236" selection-start-column="47" selection-end-line="236" selection-end-column="47" />
+            <state relative-caret-position="325">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1146#1147#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+                <element signature="e#1573#1574#0" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
                 <element signature="e#3493#3557#1" />
-                <element signature="e#3985#4053#1" />
-                <element signature="e#5630#5631#0" expanded="true" />
-                <element signature="e#5731#5732#0" expanded="true" />
-                <element signature="e#5806#5807#0" expanded="true" />
-                <element signature="e#5915#5916#0" expanded="true" />
-                <element signature="e#5994#5995#0" expanded="true" />
-                <element signature="e#6101#6102#0" expanded="true" />
-                <element signature="e#6178#6179#0" expanded="true" />
-                <element signature="e#6291#6292#0" expanded="true" />
-                <element signature="e#6227#6228#0" expanded="true" />
-                <element signature="e#6269#6270#0" expanded="true" />
-                <element signature="e#6336#6337#0" expanded="true" />
-                <element signature="e#6398#6399#0" expanded="true" />
-                <element signature="e#6456#6457#0" expanded="true" />
-                <element signature="e#6493#6494#0" expanded="true" />
+                <element signature="e#5409#5410#0" expanded="true" />
+                <element signature="e#5510#5511#0" expanded="true" />
+                <element signature="e#5585#5586#0" expanded="true" />
+                <element signature="e#5694#5695#0" expanded="true" />
+                <element signature="e#5773#5774#0" expanded="true" />
+                <element signature="e#5880#5881#0" expanded="true" />
+                <element signature="e#5957#5958#0" expanded="true" />
+                <element signature="e#6070#6071#0" expanded="true" />
+                <element signature="e#6155#6156#0" expanded="true" />
+                <element signature="e#6284#6285#0" expanded="true" />
+                <element signature="e#6369#6370#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/main/Player.java" />
         <option value="$PROJECT_DIR$/src/main/Card.java" />
         <option value="$PROJECT_DIR$/src/test/PorkGameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/Level.java" />
         <option value="$PROJECT_DIR$/src/main/PorkGame.java" />
+        <option value="$PROJECT_DIR$/src/main/Level.java" />
       </list>
     </option>
   </component>
@@ -323,34 +310,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 14m 17s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 46m 21s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 16m 48s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 46m 38s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 20m 01s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 48m 09s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 20m 59s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 48m 30s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 22m 01s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 56m 49s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 23m 25s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 57m 54s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 27m 18s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 18h 59m 23s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 33m 23s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 19h 02m 36s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 34m 39s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 19h 02m 59s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PorkGameTest - 2019.08.17 at 18h 35m 02s.xml">
+    <history-entry file="PorkGameTest - 2019.08.17 at 19h 03m 17s.xml">
       <configuration name="PorkGameTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -487,42 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="236" column="47" selection-start-line="236" selection-start-column="47" selection-end-line="236" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#3493#3557#1" />
-            <element signature="e#3985#4053#1" />
-            <element signature="e#5630#5631#0" expanded="true" />
-            <element signature="e#5731#5732#0" expanded="true" />
-            <element signature="e#5806#5807#0" expanded="true" />
-            <element signature="e#5915#5916#0" expanded="true" />
-            <element signature="e#5994#5995#0" expanded="true" />
-            <element signature="e#6101#6102#0" expanded="true" />
-            <element signature="e#6178#6179#0" expanded="true" />
-            <element signature="e#6291#6292#0" expanded="true" />
-            <element signature="e#6227#6228#0" expanded="true" />
-            <element signature="e#6269#6270#0" expanded="true" />
-            <element signature="e#6336#6337#0" expanded="true" />
-            <element signature="e#6398#6399#0" expanded="true" />
-            <element signature="e#6456#6457#0" expanded="true" />
-            <element signature="e#6493#6494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/PorkGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -532,13 +483,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/PorkGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-806">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+        <state relative-caret-position="190">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
             <element signature="e#679#680#0" expanded="true" />
             <element signature="e#716#717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#3493#3557#1" />
+            <element signature="e#5409#5410#0" expanded="true" />
+            <element signature="e#5510#5511#0" expanded="true" />
+            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#5694#5695#0" expanded="true" />
+            <element signature="e#5773#5774#0" expanded="true" />
+            <element signature="e#5880#5881#0" expanded="true" />
+            <element signature="e#5957#5958#0" expanded="true" />
+            <element signature="e#6070#6071#0" expanded="true" />
+            <element signature="e#6155#6156#0" expanded="true" />
+            <element signature="e#6284#6285#0" expanded="true" />
+            <element signature="e#6369#6370#0" expanded="true" />
           </folding>
         </state>
       </provider>

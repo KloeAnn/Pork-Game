@@ -23,13 +23,13 @@ public class Level {
 
             setNoRepeatNumber(card.getCardNumber());
         }else{
-            Card card1 = new Card(c.split("_")[0]);
-            Card card2 = new Card(c.split("_")[1]);
-            Card card3 = new Card(c.split("_")[2]);
-            Card card4 = new Card(c.split("_")[3]);
-            Card card5 = new Card(c.split("_")[4]);
+            System.out.println(c.split("_")[0]);
+            this.cards=new ArrayList<>();
 
-            this.cards = Arrays.asList(card1, card2,card3,card4,card5);
+            for(String s:c.split("_")){
+                this.cards.add(new Card(s));
+            }
+
             Collections.sort(this.cards);
             calculateCardsLevel();
         }
@@ -57,18 +57,14 @@ public class Level {
 
     public int getMaxCard(){
         switch (getCardsLevel()){
-            case 4:
-                return getTribleNumber();
             case 5:
                 return getStraightNumber();
-            case 7:
-                return getTribleNumber();
             case 8:
                 return getFullHouseNumber();
             case 9:
                 return getStraightFlushNumber();
             default:
-                return 0;
+                return getTribleNumber();
         }
     }
 
@@ -89,8 +85,6 @@ public class Level {
             );
         Collections.sort(list1);
         Collections.sort(list2);
-//        Collections.sort(repeatNumber);
-//            System.out.println(list1.size());
             switch (list1.size()) {
                 case 4:
                     setCardsLevel(2);
@@ -99,13 +93,12 @@ public class Level {
                     break;
                 case 3:
                     if (list2.size() == 2) {
-                        repeatNumber = list2;
-                        Collections.sort(repeatNumber);
+                        setRepeatNumber(list2);
+                        Collections.sort(getRepeatNumber());
                         setNoRepeatNumber(list1,list2);
                         setCardsLevel(3);
                     } else {
                         setTribleNumber(list2.get(0));
-//                        System.out.println("bugs");
                         setCardsLevel(4);
                     }
                     break;
@@ -143,30 +136,22 @@ public class Level {
                             setFlushNumber(list1);
                         }else {
                             setCardsLevel(1);
-                            setNoRepeatNumber(list1,list2);
+                            setNoRepeatNumber(list1);
                         }
                     }
             }
-//            System.out.println(getCardsLevel());
-
     }
 
     public boolean isStraight(List<Integer>list){
         Collections.sort(list);
-        if(list.get(4)-list.get(0)==4)
-            return true;
-        else
-            return false;
+        return(list.get(4)-list.get(0)==4 ? true : false);
     }
     public boolean isFlush(){
         Set set=new HashSet();
         getCards().stream().forEach(
                 p->set.add(p.getCardColor())
         );
-        if(set.size()==1)
-            return true;
-        else
-            return false;
+        return(set.size()==1 ? true : false);
     }
 
     public int getTribleNumber() {
@@ -220,15 +205,17 @@ public class Level {
             this.noRepeatNumber.add(list1.stream().filter(
                     p -> p != list2.get(0) && p != list2.get(1)
             ).collect(Collectors.toList()).get(0));
-        }else if(list2.size()==1) {
+        }else {
             this.noRepeatNumber=list1.stream().filter(
                     p -> p != list2.get(0)
             ).collect(Collectors.toList());
-        }else {
-            this.noRepeatNumber=list1;
-//            System.out.println(list1);
         }
-//        System.out.println(this.getNoRepeatNumber());
+
+    }
+
+    public void setNoRepeatNumber(List<Integer>list1) {
+
+        this.noRepeatNumber=list1;
 
     }
 
