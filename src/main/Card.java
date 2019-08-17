@@ -1,16 +1,19 @@
 package main;
 
+import com.sun.media.jfxmedia.effects.EqualizerBand;
+import com.sun.org.apache.xpath.internal.operations.Equals;
+
 import java.util.Arrays;
 import java.util.List;
 
-public class Card implements Comparable<Card>{
+public class Card implements Comparable<Card> {
     private int cardNumber;
     private String cardColor;
 
     public Card(String card) {
         String cardNumber=card.split("")[0];
         String cardColor=card.split("")[1];
-        System.out.println(card);
+//        System.out.println(card);
         this.cardNumber = transformCardNumber(cardNumber);
         this.cardColor = cardColor;
     }
@@ -51,4 +54,6 @@ public class Card implements Comparable<Card>{
             return -1;
         }
     }
+
+
 }
