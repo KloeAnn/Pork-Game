@@ -20,7 +20,8 @@ public class Level {
             Card card = new Card(c);
             this.cards = Arrays.asList(card);
             setCardsLevel(1);
-            setRepeatNumber(new ArrayList());
+
+            setNoRepeatNumber(card.getCardNumber());
         }else{
             Card card1 = new Card(c.split("_")[0]);
             Card card2 = new Card(c.split("_")[1]);
@@ -56,8 +57,6 @@ public class Level {
 
     public int getMaxCard(){
         switch (getCardsLevel()){
-            case 1:
-                return getCards().get(getCards().size()-1).getCardNumber();
             case 4:
                 return getTribleNumber();
             case 5:
@@ -144,6 +143,7 @@ public class Level {
                             setFlushNumber(list1);
                         }else {
                             setCardsLevel(1);
+                            setNoRepeatNumber(list1,list2);
                         }
                     }
             }
@@ -220,12 +220,21 @@ public class Level {
             this.noRepeatNumber.add(list1.stream().filter(
                     p -> p != list2.get(0) && p != list2.get(1)
             ).collect(Collectors.toList()).get(0));
-        }else {
+        }else if(list2.size()==1) {
             this.noRepeatNumber=list1.stream().filter(
                     p -> p != list2.get(0)
             ).collect(Collectors.toList());
+        }else {
+            this.noRepeatNumber=list1;
+//            System.out.println(list1);
         }
 //        System.out.println(this.getNoRepeatNumber());
+
+    }
+
+    public void setNoRepeatNumber(int num) {
+
+        this.noRepeatNumber=Arrays.asList(num);
 
     }
 }

@@ -72,6 +72,17 @@ public class PorkGame {
                     return result;
             }
             return "This game is a draw";
+        }else if(level1.getCardsLevel()==1){
+            System.out.println(level1.getCardsLevel());
+            System.out.println(level2.getCardsLevel());
+            List<Integer> list1 =level1.getNoRepeatNumber();
+            List<Integer> list2 =level2.getNoRepeatNumber();
+            for(int i=list1.size()-1;i>=0;i--){
+                String result=compareResult(list1.get(i),list2.get(i));
+                if(!result.equals("This game is a draw"))
+                    return result;
+            }
+            return "This game is a draw";
         }
         else {
             System.out.println(level1.getCardsLevel());

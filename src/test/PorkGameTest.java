@@ -282,4 +282,26 @@ public class PorkGameTest {
         assertEquals("This game is a draw",gameResult);
     }
 
+    @Test
+    public void testPlayPorkGame_given3D_4S_6D_8S_AD_3H_5C_AH_7C_8H_thenReturnPlayer1Wins() {
+        String cards="3D_4S_6D_8S_AD_3H_5C_AH_7C_8H";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("player2 wins",gameResult);
+    }
+
+    @Test
+    public void testPlayPorkGame_given3D_4S_6D_8S_AD_3H_6C_AH_4C_8H_thenReturnPlayer1Wins() {
+        String cards="3D_4S_6D_8S_AD_3H_6C_AH_4C_8H";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("This game is a draw",gameResult);
+    }
+
 }
