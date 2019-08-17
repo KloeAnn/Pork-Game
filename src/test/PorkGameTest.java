@@ -216,4 +216,15 @@ public class PorkGameTest {
         assertEquals("This game is a draw",gameResult);
     }
 
+    @Test
+    public void testPlayPorkGame_given4D_5S_6D_7S_8D_4H_5D_6H_7D_8H_thenReturnPlayer1Wins() {
+        String cards="4D_5S_6D_7S_8D_4H_5D_6H_7D_8H";
+
+        PorkGame porkGame=new PorkGame(cards);
+
+        String gameResult=porkGame.playPorkGame();
+
+        assertEquals("This game is a draw",gameResult);
+    }
+
 }
