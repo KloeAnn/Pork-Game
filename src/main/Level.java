@@ -8,6 +8,7 @@ public class Level {
     private List<Card>cards;
     private int cardsLevel;
     private List<Integer> repeatNumber;
+    private int tribleNumber;
 
     public Level(String c) {
         if(c.length()==2){
@@ -62,29 +63,49 @@ public class Level {
     }
 
     public void calculateCardsLevel(List<Card> cards){
-        List<Integer>list=new ArrayList<>();
+        List<Integer>list1=new ArrayList<>();
+        List<Integer>list2=new ArrayList<>();
         repeatNumber=new ArrayList<>();
         getCards().stream().forEach(
                 p -> {
-                    if (!list.contains(p.getCardNumber())) {
-                        list.add(p.getCardNumber());
+                    if (!list1.contains(p.getCardNumber())) {
+                        list1.add(p.getCardNumber());
                     }else {
-                        repeatNumber.add(p.getCardNumber());
+                        if (!list2.contains(p.getCardNumber())) {
+                            list2.add(p.getCardNumber());
+                        }
                     }
                 }
         );
-        Collections.sort(repeatNumber);
+//        Collections.sort(repeatNumber);
         //System.out.println(repeatNumber);
-        switch (repeatNumber.size()){
-            case 1:
+        switch (list1.size()){
+            case 4:
                 setCardsLevel(2);
+                repeatNumber.add(list2.get(0));
                 break;
-            case 2:
-                setCardsLevel(3);
+            case 3:
+                if(list2.size()==2){
+                    repeatNumber=list2;
+                    Collections.sort(repeatNumber);
+                    setCardsLevel(3);
+                }
+                else {
+                    setTribleNumber(list2.get(0));
+                    setCardsLevel(4);
+                }
                 break;
             default:
                 setCardsLevel(1);
         }
         System.out.println(repeatNumber);
+    }
+
+    public int getTribleNumber() {
+        return tribleNumber;
+    }
+
+    public void setTribleNumber(int tribleNumber) {
+        this.tribleNumber = tribleNumber;
     }
 }
